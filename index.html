@@ -7,12 +7,44 @@
     <body>
         
         <div class = "question_menu">
-            <p>Is this task urgent?</p>
+            <p id = "qtext">Is this task urgent?</p>
             <div class = "qbut">
                 <button id = "yes_but">Yes</button>
                 <button id = "no_but">No</button>
             </div>
         </div>
+
+        <div class="task_manager">
+            <div class="column">
+                <p>Urgent and Important</p>
+                <div class="task">
+                    <ul class = "taskList">
+                    </ul>
+                </div>
+            </div>
+            <div class="column">
+                <p>Urgent but not Important</p>
+                <div class="task">
+                    <ul class = "taskList">
+                    </ul>
+                </div>
+            </div>
+            <div class="column">
+                <p>not Urgent but Important</p>
+                <div class="task">
+                    <ul class = "taskList">
+                    </ul>
+                </div>
+            </div>
+            <div class="column">
+                <p>not Urgent not Important</p>
+                <div class="task">
+                    <ul class = "taskList">
+                    </ul>
+                </div>
+            </div>
+        </div>
+
         <div class = "task_handle">
             <input type = "text" placeholder="Enter your Task" id = "task_info">
             <button id= "add_task_but">Add Task</button>
