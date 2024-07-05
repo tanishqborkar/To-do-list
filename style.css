@@ -1,0 +1,28 @@
+.question_menu{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border : 2px solid black;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    gap: 10px;
+    background-color: rgb(136, 202, 147);
+}
+
+.qbut{
+    width: 100%;
+}
+
+
+.qbut button{
+    width: 20%;
+    height: 20%;
+    border-radius: 5px;
+    border: none;
+}
