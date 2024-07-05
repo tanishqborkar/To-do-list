@@ -1,10 +1,23 @@
+
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .question_menu{
     display:none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border : 2px solid black;
     width: 400px;
     transform: translate(-50%, -50%);
     position: absolute;
@@ -13,10 +26,18 @@
     border-radius: 10px;
     gap: 10px;
     background-color: rgb(136, 202, 147);
+    padding: 10px;  
+}
+.question_menu p{
+    font-weight: 600;
+    font-size: medium;
 }
 
 .qbut{
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 
@@ -29,7 +50,6 @@
 
 .task_manager {
     display: flex;
-
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
@@ -39,12 +59,82 @@
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    flex: 1 1 calc(25% - 20px); /* 25% width minus 20px for margins */
+    flex: 1 1 22%;
     margin: 10px;
     padding: 20px;
     text-align: center;
+    border-radius: 5px;
+}
+
+.column p{
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: underline;
 }
 
 ul li{
     list-style: none;
+    border: none;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 2px;
+}
+ul li button{
+border-radius: 5px;
+border: none;
+background-color: #6a11cb;
+color: #f0f0f0;
+}
+
+ul li span{
+    font-style: italic;
+}
+
+
+.task_handle{
+    display: flex;
+    width:80%;
+    height: 15%;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+}
+
+#task_info{
+    width: 100%;
+    height: 45%;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-weight: 500;
+    font-size: medium;
+}
+
+#task_info::placeholder{
+    text-align: center;
+    font-weight: 500;
+}
+
+
+#add_task_but{
+    background-color: #4CAF50; 
+    border: none;             
+    color: white;            
+    padding: 10px 12px;      
+    text-align: center;      
+    text-decoration: none;    
+    display: inline-block;    
+    font-size: 16px;          
+    margin: 2px 2px;       
+    cursor: pointer;          
+    border-radius: 8px;       
 }
